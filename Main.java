@@ -31,7 +31,7 @@ class Result {
   }
 
 
-  public  int gettotalmark(String team , int year){
+  public  int getTotalGoals(String team , int year){
     int total =0 ;
     try {
       for(int k = 1 ; k <= 2 ; k++ ){
@@ -62,7 +62,7 @@ class Result {
 class Main {
   public static void main(String[] args) {
     Result rs = new Result() ;
-    int a = rs.gettotalmark("Barcelona" , 2011) ;
+    int a = rs.getTotalGoals("Barcelona" , 2011) ;
     System.out.println(a) ;
     
   }
